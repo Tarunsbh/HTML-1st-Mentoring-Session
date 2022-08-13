@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .signup {
+            color: white;
+            position: absolute;
+            top: 10%;
+            right: 100px;
+            text-align: left;
+            vertical-align: middle;
+            width: 300px;
+            padding: 10px;
+            height: 400px;
+
+        }
+
+        input {
+            height: 30px;
+            width: 100;
+            border-radius: 10px;
+            padding-left: 10px;
+            margin: 10px;
+            outline: none;
+            border: none;
+        }
+
+        #bgvideo {
+            position: fixed;
+            width: auto;
+            height: auto;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 120px;
+            height: 40px;
+            color: white;
+            background-color: blue;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+            outline: none;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <video src="./video/background.mp4" autoplay loop muted id="bgvideo"></video>
+    <div class="signup">
+        <h2>Sign up Form</h2>
+        <form action="./Home.html">
+            <label for="">First name:</label>
+            <input type="text" placeholder="enter First Name" required><br>
+            <label for="">Last name:</label>
+            <input type="text" placeholder="enter Last Name" required><br>
+            <label for="">eMail:</label>
+            <input type="text" placeholder="enter eMail Address" required><br>
+            <label for="">Username:</label>
+            <input type="text" placeholder="enter Username" required><br>
+            <label for="">Password:</label>
+            <input type="text" placeholder="enter Password" required minlength="8"><br>
+            <label for="">Re-enter Again:</label>
+            <input type="text" placeholder="Re-enter Password" required minlength="8"><br>            
+            <div>
+                <button>Sign Up</button>
+                <button><a href="./login.html">Login</a></button>
+            </div>
+        </form>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
